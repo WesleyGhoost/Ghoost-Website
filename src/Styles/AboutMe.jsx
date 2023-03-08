@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const AboutMe = styled.section`
   width: 50%;
-  margin-top: 100px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;

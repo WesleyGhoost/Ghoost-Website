@@ -23,12 +23,13 @@ export const Intro = styled.section`
 
 export const IntroTitle = styled.h1`
 margin-top: 50px;
-  font-size: 40px;
+  font-size: 45px;
   color: #208000;
 `;
 
 export const IntroDescrip = styled.h3`
   color: #ffffffbb;
+  font-size: 22px;
 `;
 
 export const IntroImgs = styled.div`
