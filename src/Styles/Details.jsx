@@ -5,7 +5,7 @@ export const Details = styled.section`
   margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   right: 200px;
@@ -32,12 +32,18 @@ export const Details = styled.section`
 export const DetailsTitle = styled.h1`
   color: #208000bd;
   border-bottom: 2px solid #208000bd;
+  align-self: center;
 `;
 
 export const DetailsDescrip = styled.h3`
   color: #ffffffbb;
 `
 
-export const DetailsLink = styled.a`
+export const DetailsLinkGit = styled.a`
   color: white;
+`
+
+export const DetailsLinkFigs = styled.a`
+  color: #ffffffb6;
+  font-size: 12px;
 `

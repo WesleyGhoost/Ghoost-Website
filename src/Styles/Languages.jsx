@@ -18,7 +18,7 @@ export const LanguagesTitle = styled.h2`
   text-align: center;
 `
 
-export const LanguagesReposit = styled.div`
+export const LanguagesExamples = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -44,14 +44,14 @@ export const LanguagesReposit = styled.div`
   }
 `
 
-export const LanguagesRepositTitle = styled.h3`
+export const LanguagesExamplesTitle = styled.h3`
   color: #ffffff;
 `
 
-export const LanguagesRepositLang = styled.strong`
+export const LanguagesExamplesLang = styled.strong`
   color: #ffffffcd;
 `
 
-export const LanguagesRepositExamples = styled.a`
+export const LanguagesExamplesDescrips = styled.p`
   color: #ffffffbb;
 `

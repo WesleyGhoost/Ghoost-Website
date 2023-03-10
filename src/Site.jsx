@@ -16,8 +16,8 @@ import { useEffect } from 'react'
 
 import { ContainerAll, Intro, IntroTitle, IntroDescrip, IntroImgs } from "./Styles/Intro";
 import { AboutMe, AboutMeTitle, AboutMeDescrip } from "./Styles/AboutMe"
-import { Languages, LanguagesTitle, LanguagesReposit, LanguagesRepositTitle, LanguagesRepositLang, LanguagesRepositExamples } from "./Styles/Languages";
-import { Details, DetailsTitle, DetailsDescrip, DetailsLink } from "./Styles/Details";
+import { Languages, LanguagesTitle, LanguagesExamples, LanguagesExamplesTitle, LanguagesExamplesLang, LanguagesExamplesDescrips } from "./Styles/Languages";
+import { Details, DetailsTitle, DetailsDescrip, DetailsLinkGit, DetailsLinkFigs } from "./Styles/Details";
 import { ContainerFooter, Contact, ContactForms, ContactFormsLink } from "./Styles/FooterStyle";
 import { Projects, ProjectsDescrip, ProjectsDetails, ProjectsImgs, ProjectsSubTitle, ProjectsTitle } from './Styles/Projects';
 
@@ -83,14 +83,14 @@ const Site = () => {
         <img className='langs' height="65" width="65" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript"/>
         <img className='langs' height="65" width="65" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
         <img className='langs' height="65" width="65" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-        <LanguagesReposit className='lang-reposit'>
-          <LanguagesRepositTitle>Repositórios de projetos menores nos quais utilizei tais linguagens:</LanguagesRepositTitle>
-          <p><LanguagesRepositLang>HTML: </LanguagesRepositLang><LanguagesRepositExamples href='https://github.com/WesleyGhoost/Sistema-Solar'>Sistema Solar</LanguagesRepositExamples></p>
-          <p><LanguagesRepositLang>CSS: </LanguagesRepositLang><LanguagesRepositExamples href='https://github.com/WesleyGhoost/Sorteio-de-Nomes'>Sorteio de Nomes</LanguagesRepositExamples></p>
-          <p><LanguagesRepositLang>Javascript: </LanguagesRepositLang><LanguagesRepositExamples href='https://github.com/WesleyGhoost/Listagem-de-Produtos'>Listagem de produtos</LanguagesRepositExamples></p>
-          <p><LanguagesRepositLang>React: </LanguagesRepositLang><LanguagesRepositExamples href='https://github.com/WesleyGhoost/Learn-React'>Learn-React</LanguagesRepositExamples></p>
-          <p><LanguagesRepositLang>Git: </LanguagesRepositLang><LanguagesRepositExamples>Por favor, acesse meu Github para conferir a utilização do Git.</LanguagesRepositExamples></p>
-        </LanguagesReposit>
+        <LanguagesExamples className='lang-reposit'>
+          <LanguagesExamplesTitle>Exemplos do que sei fazer em tais linguagens:</LanguagesExamplesTitle>
+          <LanguagesExamplesDescrips><LanguagesExamplesLang>HTML: </LanguagesExamplesLang>Criação de divs, navbar, footer, select/options e tabelas.</LanguagesExamplesDescrips>
+          <LanguagesExamplesDescrips><LanguagesExamplesLang>CSS: </LanguagesExamplesLang>Estilização de cores, tamanhos, posições dos itens, animações, display flex e grid, e responsivo. </LanguagesExamplesDescrips>
+          <LanguagesExamplesDescrips><LanguagesExamplesLang>Javascript: </LanguagesExamplesLang>Criação de variáveis, funções, loops, condições, classes, manipulação do DOM e assíncrono.</LanguagesExamplesDescrips>
+          <LanguagesExamplesDescrips><LanguagesExamplesLang>ReactJS: </LanguagesExamplesLang>Utilização de JSX, imports, props e hooks(useState, useEffect, useContext...)</LanguagesExamplesDescrips>
+          <LanguagesExamplesDescrips><LanguagesExamplesLang>Git: </LanguagesExamplesLang>Commits, branchs, e deploy no Github.</LanguagesExamplesDescrips>
+        </LanguagesExamples>
       </Languages>
       
       <ProjectsTitle className='project-title' id='projects'>Principais Projetos</ProjectsTitle>
@@ -161,8 +161,11 @@ const Site = () => {
 
       <Details className='details' id='details'>
         <DetailsTitle>Detalhes do site</DetailsTitle>
-        <DetailsDescrip>Este site foi construído com a utilização da linguagem <em>React</em>, juntamente com a sua mais moderna biblioteca de estilização, o <em>styled-components</em>, e sua outra biblioteca voltada ao scroll do site, <em>react-scroll</em>. Sendo também o mesmo, responsivo nos mais diversos tipos de telas (mobile, tablet, desktop, entre outros.)</DetailsDescrip>
-        <DetailsDescrip>Sua documentação pode ser acessada diretamente do <em>Github</em> através do seguinte link: <DetailsLink href="https://github.com/WesleyGhoost/Ghoost-Website">Ghoost Website</DetailsLink></DetailsDescrip>
+        <DetailsDescrip>Este site foi construído com a utilização da linguagem <em>React</em>, juntamente com a sua mais moderna biblioteca de estilização, o <em>styled-components</em>, sua outra biblioteca voltada ao scroll do site, <em>react-scroll</em>, e por fim, o <em>scroll-reveal</em>, que é capaz de revelar o conteúdo do site conforme o usuário for deslizando-o. Sendo também o mesmo, responsivo nos mais diversos tipos de telas (mobile, tablet, desktop, entre outros.)</DetailsDescrip>
+        <DetailsDescrip>Sua documentação pode ser acessada diretamente do <em>Github</em> através do seguinte link: <DetailsLinkGit href="https://github.com/WesleyGhoost/Ghoost-Website">Ghoost Website</DetailsLinkGit></DetailsDescrip>
+        <DetailsLinkFigs href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Pixel perfect - Flaticon</DetailsLinkFigs>
+        <DetailsLinkFigs href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</DetailsLinkFigs>
+        <DetailsLinkFigs href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Vectors Market - Flaticon</DetailsLinkFigs>
       </Details>
 
       <ContainerFooter>
@@ -176,7 +179,3 @@ const Site = () => {
 }
 
 export default Site;
-
-//<a href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Pixel perfect - Flaticon</a>
-//<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a>
-//<a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Vectors Market - Flaticon</a>
