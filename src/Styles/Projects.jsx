@@ -10,7 +10,7 @@ export const Projects = styled.section`
   row-gap: 40px;
 
   @media screen and (min-width: 1024px) and (max-width: 1200px)  {
-    width: 96%;
+    width: 97%;
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px)  {
@@ -26,40 +26,40 @@ export const Projects = styled.section`
     align-items: center;
     gap: 60px;
 
-    #firstElement {
+    #firstProject {
       order: 1;
     }
-    #secondElement {
+    #firstDetail {
       order: 2;
     }
-    #thirdElement {
+    #secondProject {
       order: 3;
     }
-    #fourthElement {
+    #secondDetail {
       order: 4;
     }
-    #fifthElement {
+    #thirdProject {
       order: 5;
     }
-    #sixthElement {
+    #thirdDetail {
       order: 6;
     }
-    #seventhElement {
+    #fourthProject {
       order: 7;
     }
-    #eighthElement {
+    #fourthDetail {
       order: 8;
     }
-    #ninthElement {
+    #fifthProject {
       order: 9;
     }
-    #tenthElement {
+    #fifthDetail {
       order: 10;
     }
-    #eleventhElement {
+    #sixthProject {
       order: 11;
     }
-    #twelfthElement {
+    #sixthDetail {
       order: 12;
     }
   }

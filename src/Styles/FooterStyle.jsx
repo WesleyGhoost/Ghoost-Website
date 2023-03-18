@@ -8,6 +8,7 @@ export const ContainerFooter = styled.footer`
   align-items: flex-start;
   padding: 10px;
   background-color: #ffffff17;
+  border-radius: 5px;
 `
 
 export const Contact = styled.h3`
