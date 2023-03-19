@@ -17,12 +17,12 @@ import TopMovies from './img/top-5-filmes.png'
 import { Navbar } from "./components/Navbar";
 import { useEffect } from 'react'
 
-import { ContainerAll, Intro, IntroTitle, IntroDescrip, IntroImgs } from "./styles/Intro";
-import { AboutMe, AboutMeTitle, AboutMeDescrip, AboutMeStrong, About, AboutImg, Img, ImgDetail } from "./styles/About"
-import { Languages, LanguagesTitle, LanguagesExamples, LanguagesExamplesTitle, LanguagesExamplesLang, LanguagesExamplesDescrips } from "./styles/Languages";
-import { Details, DetailsTitle, DetailsDescrip, DetailsLinkGit, DetailsLinkFigs } from "./styles/Details";
-import { ContainerFooter, Contact, ContactForms, ContactFormsLink } from "./styles/FooterStyle";
-import { Projects, ProjectsDescrip, ProjectsDetails, ProjectsImgs, ProjectsSubTitle, ProjectsTitle } from './styles/Projects';
+import { ContainerAll, Intro, IntroTitle, IntroDescrip, IntroImgs } from "./Styles/Intro";
+import { AboutMe, AboutMeTitle, AboutMeDescrip, AboutMeStrong, About, AboutImg, Img, ImgDetail } from "./Styles/About"
+import { Languages, LanguagesTitle, LanguagesExamples, LanguagesExamplesTitle, LanguagesExamplesLang, LanguagesExamplesDescrips } from "./Styles/Languages";
+import { Details, DetailsTitle, DetailsDescrip, DetailsLinkGit, DetailsLinkFigs } from "./Styles/Details";
+import { ContainerFooter, Contact, ContactForms, ContactFormsLink } from "./Styles/FooterStyle";
+import { Projects, ProjectsDescrip, ProjectsDetails, ProjectsImgs, ProjectsSubTitle, ProjectsTitle } from './Styles/Projects';
 
 const Site = () => {
   const revealAbout = () => {

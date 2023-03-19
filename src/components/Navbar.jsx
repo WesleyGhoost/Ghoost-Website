@@ -1,7 +1,7 @@
 import '../index.css'
 
 import { useEffect, useState } from "react"
-import { NavList } from "../styles/NavbarStyle"
+import { NavList } from "../Styles/NavbarStyle"
 import {Link} from 'react-scroll'
 
 export const Navbar = () => {
