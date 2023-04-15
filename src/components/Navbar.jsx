@@ -1,10 +1,12 @@
 import '../index.css'
 
 import { useEffect, useState } from "react"
-import { NavList } from "../Styles/NavbarStyle"
-import {Link} from 'react-scroll'
 
-export const Navbar = () => {
+import { Link } from 'react-scroll'
+
+import { NavList } from "../Styles/NavbarStyle"
+
+function Navbar() {
     const [colorNav, setColorNav] = useState(false)
 
     useEffect(() => {
@@ -43,3 +45,5 @@ export const Navbar = () => {
         </>
     )
 }
+
+export default Navbar

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Projects = styled.section`
+export const ProjectsContainer = styled.section`
   width: 85%;
   margin-top: 60px;
   display: flex;
@@ -8,6 +8,11 @@ export const Projects = styled.section`
   flex-wrap: wrap;
   position: relative;
   row-gap: 40px;
+
+  #eighthProject {
+    cursor: pointer;
+    opacity: 4%;
+  }
 
   @media screen and (min-width: 1024px) and (max-width: 1200px)  {
     width: 97%;
@@ -61,6 +66,18 @@ export const Projects = styled.section`
     }
     #sixthDetail {
       order: 12;
+    }
+    #seventhProject {
+      order: 13;
+    }
+    #seventhDetail {
+      order: 14;
+    }
+    #eighthProject {
+      order: 15;
+    }
+    #eighthDetail {
+      order: 16;
     }
   }
 `
@@ -116,4 +133,15 @@ export const ProjectsDetails = styled.details`
 
 export const ProjectsDescrip = styled.p`
   color: #ffffffc5;
+`
+
+export const ProjectSoon = styled.h3`
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+
+  @media screen and (min-width: 320px) and (max-width: 480px)  {
+    width: 80%;
+  }
 `

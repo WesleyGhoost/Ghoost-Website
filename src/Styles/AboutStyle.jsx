@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const About = styled.section`
+export const AboutContainer = styled.section`
   width: 100%;
-  margin-top: 150px;
+  margin-top: 160px;
   display: flex;
   align-items: center;
   justify-content: center;

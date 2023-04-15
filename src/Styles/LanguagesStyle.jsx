@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Languages = styled.section`
+export const LanguagesContainer = styled.section`
   width: 40%;
   margin-top: 30px;
   display: flex;
@@ -40,7 +40,8 @@ export const LanguagesExamples = styled.div`
   }
 
   @media screen and (min-width: 320px) and (max-width: 480px)  {
-    right: 70px;
+    right: 0;
+    justify-content: center;
   }
 `
 

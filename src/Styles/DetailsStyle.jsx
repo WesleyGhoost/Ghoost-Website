@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Details = styled.section`
+export const DetailsContainer = styled.section`
   width: 50%;
   margin-top: 100px;
   display: flex;
