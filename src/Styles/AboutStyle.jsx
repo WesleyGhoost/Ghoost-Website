@@ -24,23 +24,10 @@ export const AboutImg = styled.div`
 export const Img = styled.img`
   width: 200px;
   height: 200px;
+  border-radius: 100px;
 
   @media screen and (min-width: 320px) and (max-width: 768px){
-    width: 160px;
-    height: 160px;
-  }
-`
-
-export const ImgDetail = styled.details`
-  text-align: center;
-  font-size: 13px;
-  color: #ffffffb0;
-
-  @media screen and (min-width: 320px) and (max-width: 480px){
-    font-size: 16px;
-    h5 {
-      font-size: 13px;
-    }
+    display: none;
   }
 `
 

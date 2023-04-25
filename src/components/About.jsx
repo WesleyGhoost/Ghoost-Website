@@ -1,15 +1,15 @@
-import Hollow from '../img/hollow-knight.png'
+import Computer from '../img/computer.jpg'
 
 import ScrollReveal from 'scrollreveal'
 
 import { useEffect } from 'react'
 
-import { AboutMe, AboutMeTitle, AboutMeDescrip, AboutMeStrong, AboutImg, Img, ImgDetail, AboutContainer } from "../Styles/AboutStyle"
+import { AboutMe, AboutMeTitle, AboutMeDescrip, AboutMeStrong, AboutContainer, AboutImg, Img } from "../Styles/AboutStyle"
 
 function About() {
     const revealAbout = () => {
         ScrollReveal().reveal('.about', {reset: false, duration: 1500, delay: 300, origin: 'right', distance: '30px'})
-        ScrollReveal().reveal('.about-img', {reset: false, duration: 1500, delay: 700, origin: 'left', distance: '30px'})
+        ScrollReveal().reveal('.about-img', {reset: false, duration: 1500, delay: 500, origin: 'left', distance: '30px'})
     }
 
     useEffect(() => {
@@ -20,10 +20,7 @@ function About() {
         <>
             <AboutContainer id='about'>
                 <AboutImg className='about-img'>
-                    <Img src={Hollow} />
-                    <ImgDetail>
-                        <h5>Hollow Knight, um dos meus personagens favoritos.</h5>
-                    </ImgDetail>
+                    <Img src={Computer}/>
                 </AboutImg>
                 <AboutMe className='about'>
                     <AboutMeTitle>Sobre mim</AboutMeTitle>

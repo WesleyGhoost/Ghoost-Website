@@ -5,11 +5,9 @@ export const ProjectsContainer = styled.section`
   margin-top: 60px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  position: relative;
-  row-gap: 40px;
+  align-items: flex-start;
 
-  #eighthProject {
+  #project-soon {
     cursor: pointer;
     opacity: 4%;
   }
@@ -24,61 +22,15 @@ export const ProjectsContainer = styled.section`
 
   @media screen and (min-width: 481px) and (max-width: 768px)  {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
   @media screen and (min-width: 320px) and (max-width: 480px)  {
     flex-direction: column;
     align-items: center;
     gap: 60px;
-
-    #firstProject {
-      order: 1;
-    }
-    #firstDetail {
-      order: 2;
-    }
-    #secondProject {
-      order: 3;
-    }
-    #secondDetail {
-      order: 4;
-    }
-    #thirdProject {
-      order: 5;
-    }
-    #thirdDetail {
-      order: 6;
-    }
-    #fourthProject {
-      order: 7;
-    }
-    #fourthDetail {
-      order: 8;
-    }
-    #fifthProject {
-      order: 9;
-    }
-    #fifthDetail {
-      order: 10;
-    }
-    #sixthProject {
-      order: 11;
-    }
-    #sixthDetail {
-      order: 12;
-    }
-    #seventhProject {
-      order: 13;
-    }
-    #seventhDetail {
-      order: 14;
-    }
-    #eighthProject {
-      order: 15;
-    }
-    #eighthDetail {
-      order: 16;
-    }
   }
 `
 
@@ -99,6 +51,22 @@ export const ProjectsSubTitle = styled.h3`
   }
 `
 
+export const ProjectsColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+`
+
+export const ProjectInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`
+
 export const ProjectsImgs = styled.img`
  opacity: 40%;
  :hover {
@@ -111,8 +79,8 @@ export const ProjectsImgs = styled.img`
   }
 
   @media screen and (min-width: 481px) and (max-width: 768px)  {
-    width: 190px;
-    height: 100px;
+    width: 280px;
+    height: 140px;
   }
 
   @media screen and (min-width: 320px) and (max-width: 480px)  {
@@ -122,9 +90,20 @@ export const ProjectsImgs = styled.img`
 `
 
 export const ProjectsDetails = styled.details`
-  width: 50%;
+  width: 100%;
+  max-width: 370px;
   text-align: center;
   color: #ffffff;
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px)  {
+    width: 97%;
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1023px)  {
+    width: 100%;
+    max-width: 290px;
+  }
   
   @media screen and (min-width: 320px) and (max-width: 480px)  {
     width: 80%;
@@ -133,6 +112,7 @@ export const ProjectsDetails = styled.details`
 
 export const ProjectsDescrip = styled.p`
   color: #ffffffc5;
+  text-align: center;
 `
 
 export const ProjectSoon = styled.h3`

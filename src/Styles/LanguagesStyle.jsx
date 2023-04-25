@@ -19,30 +19,12 @@ export const LanguagesTitle = styled.h2`
 `
 
 export const LanguagesExamples = styled.div`
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  right: 300px;
-  padding: 10px;
-
-  @media screen and (min-width: 1024px) and (max-width: 1200px)  {
-    right: 250px;
-  }
-
-  @media screen and (min-width: 769px) and (max-width: 1023px)  {
-    right: 170px;
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 768px)  {
-    right: 100px;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 480px)  {
-    right: 0;
-    justify-content: center;
-  }
+  justify-content: center;
+  row-gap: 20px;
 `
 
 export const LanguagesExamplesTitle = styled.h3`

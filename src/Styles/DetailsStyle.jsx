@@ -20,12 +20,13 @@ export const DetailsContainer = styled.section`
   }
 
   @media screen and (min-width: 481px) and (max-width: 768px)  {
-    right: 80px;
+    right: 0px;
+    width: 80%;
   }
 
   @media screen and (min-width: 320px) and (max-width: 480px)  {
-    right: 20px;
-    width: 75%;
+    right: 0px;
+    width: 80%;
   }
 `
 
