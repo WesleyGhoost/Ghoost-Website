@@ -1,12 +1,12 @@
 import { ContainerAll } from "./Styles/ContainerAll";
-import Navbar from "./components/navbar/navbar";
-import Intro from "./components/intro";
-import About from './components/about'
-import Languages from './components/languages'
-import Projects from "./components/projects";
-import Details from "./components/details";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+import Navbar from "./components/navbar/Navbar";
+import Intro from "./components/Intro";
+import About from './components/About'
+import Languages from './components/Languages'
+import Projects from "./components/Projects";
+import Details from "./components/Details";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Site = () => {
   return (

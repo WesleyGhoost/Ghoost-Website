@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from 'react-scroll'
 import { Burger, Menu, NavBurger, NavDefault } from "../../Styles/NavbarStyle"
-import './navbar.css'
+import './Navbar.css'
 
 function Navbar() {
     const [colorNav, setColorNav] = useState(false)
