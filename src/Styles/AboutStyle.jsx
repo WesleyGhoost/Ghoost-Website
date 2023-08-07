@@ -19,15 +19,15 @@ export const AboutImg = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
 
-export const Img = styled.img`
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
 
-  @media screen and (min-width: 320px) and (max-width: 768px){
-    display: none;
+    @media screen and (min-width: 320px) and (max-width: 768px){
+      display: none;
+    }
   }
 `
 
@@ -43,21 +43,21 @@ export const AboutMe = styled.div`
     width: 80%;
     padding: 0;
   }
-`
 
-export const AboutMeTitle = styled.h1`
-  color: #208000bd;
-  border-bottom: 2px solid #208000bd;
+  h1 {
+    color: #208000;
+    border-bottom: 2px solid #208000bd;
 
-  @media screen and (min-width: 320px) and (max-width: 768px){
-    margin-top: 80px;
+    @media screen and (min-width: 320px) and (max-width: 768px){
+      margin-top: 80px;
+    }
+}
+
+  h3 {
+    color: #ffffffbb;
+
+    strong {
+    color: #3c8000c0;
+    }
   }
-`;
-
-export const AboutMeDescrip = styled.h3`
-  color: #ffffffbb;
-`
-
-export const AboutMeStrong = styled.strong`
-  color: #3c8000a4;
 `

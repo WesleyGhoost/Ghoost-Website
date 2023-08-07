@@ -1,8 +1,6 @@
 import ScrollReveal from 'scrollreveal'
-
 import { useEffect } from "react";
-
-import { DetailsContainer, DetailsTitle, DetailsDescrip, DetailsLinkGit, DetailsLinkFigs } from "../Styles/DetailsStyle";
+import { DetailsContainer } from "../Styles/detailsStyle";
 
 function Details() {
     const revealDetails = () => {
@@ -16,16 +14,16 @@ function Details() {
     return (
         <>
             <DetailsContainer className='details' id='details'>
-                <DetailsTitle>Detalhes do site</DetailsTitle>
-                <DetailsDescrip>Este site foi construído com a utilização da linguagem <em>React</em>, juntamente com a sua mais moderna biblioteca de estilização, o <em>styled-components</em>, sua outra biblioteca voltada ao scroll do site, <em>react-scroll</em>, e por fim, o <em>scroll-reveal</em>, que é capaz de revelar o conteúdo do site conforme o usuário for deslizando-o. Sendo também o mesmo, responsivo nos mais diversos tipos de telas (mobile, tablet, desktop, entre outros.)</DetailsDescrip>
-                <DetailsDescrip>Sua documentação pode ser acessada diretamente do <em>Github</em> através do seguinte link: 
-                    <DetailsLinkGit href="https://github.com/WesleyGhoost/Ghoost-Website"> Ghoost Website</DetailsLinkGit>
-                </DetailsDescrip>
-                <DetailsLinkFigs href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Pixel perfect - Flaticon</DetailsLinkFigs>
-                <DetailsLinkFigs href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</DetailsLinkFigs>
-                <DetailsLinkFigs href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Vectors Market - Flaticon</DetailsLinkFigs>
-                <DetailsLinkFigs href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by mim_studio - Flaticon</DetailsLinkFigs>
-                <DetailsLinkFigs href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Smashicons - Flaticon</DetailsLinkFigs>
+                <h1>Detalhes do site</h1>
+                <h3>Este site foi construído com a utilização da linguagem <em>React</em>, juntamente com a sua mais moderna biblioteca de estilização, o <em>styled-components</em>, sua outra biblioteca voltada ao scroll do site, <em>react-scroll</em>, e por fim, o <em>scroll-reveal</em>, que é capaz de revelar o conteúdo do site conforme o usuário for deslizando-o. Sendo também o mesmo, responsivo nos mais diversos tipos de telas (mobile, tablet, desktop, entre outros.)</h3>
+                <h3>Sua documentação pode ser acessada diretamente do <em>Github</em> através do seguinte link: 
+                    <a href="https://github.com/WesleyGhoost/Ghoost-Website"> Ghoost Website</a>
+                </h3>
+                <a href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Pixel perfect - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Pixel perfect - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Vectors Market - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by mim_studio - Flaticon</a>
+                <a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Smashicons - Flaticon</a>
             </DetailsContainer>
         </>
     )

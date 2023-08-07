@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
+export const LanguagesTitle = styled.h2`
+  margin-top: 100px;
+  color: #208000;
+  border-bottom: 2px solid #208000bd;
+  text-align: center;
+`
+
 export const LanguagesContainer = styled.section`
   width: 40%;
   margin-top: 30px;
@@ -11,13 +18,6 @@ export const LanguagesContainer = styled.section`
   column-gap: 60px;
 `
 
-export const LanguagesTitle = styled.h2`
-  margin-top: 100px;
-  color: #208000bd;
-  border-bottom: 2px solid #208000bd;
-  text-align: center;
-`
-
 export const LanguagesExamples = styled.div`
   width: 100%;
   display: flex;
@@ -25,16 +25,16 @@ export const LanguagesExamples = styled.div`
   align-items: center;
   justify-content: center;
   row-gap: 20px;
-`
 
-export const LanguagesExamplesTitle = styled.h3`
-  color: #ffffff;
-`
+  h3 {
+    color: #ffffff;
+  }
 
-export const LanguagesExamplesLang = styled.strong`
-  color: #ffffffcd;
-`
+  p {
+    color: #ffffffbb;
 
-export const LanguagesExamplesDescrips = styled.p`
-  color: #ffffffbb;
+    strong {
+      color: #ffffffcd;
+    }
+  }
 `

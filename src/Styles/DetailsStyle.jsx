@@ -28,23 +28,24 @@ export const DetailsContainer = styled.section`
     right: 0px;
     width: 80%;
   }
-`
 
-export const DetailsTitle = styled.h1`
-  color: #208000bd;
-  border-bottom: 2px solid #208000bd;
-  align-self: center;
-`;
+  h1 {
+    color: #208000;
+    border-bottom: 2px solid #208000bd;
+    align-self: center;
+  }
 
-export const DetailsDescrip = styled.h3`
-  color: #ffffffbb;
-`
+  h3 {
+    color: #ffffffbb;
+  }
 
-export const DetailsLinkGit = styled.a`
-  color: white;
-`
+  h3 > a {
+    color: white;
+    font-size: 16px;
+  }
 
-export const DetailsLinkFigs = styled.a`
-  color: #ffffffb6;
-  font-size: 12px;
+  a {
+    color: #ffffffb6;
+    font-size: 12px;
+  }
 `

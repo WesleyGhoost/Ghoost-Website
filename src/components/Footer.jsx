@@ -1,22 +1,17 @@
-import { FooterContainer, Contact, ContactForms, ContactFormsLink } from "../Styles/FooterStyle";
+import React from 'react'
+import { FooterContainer } from '../Styles/footerStyle'
 
 function Footer() {
-    return (
-        <>
-            <FooterContainer>
-                <Contact>Contatos:</Contact>
-                <ContactForms>Email: 
-                    <ContactFormsLink> wesley.felix12@hotmail.com</ContactFormsLink>
-                </ContactForms>
-                <ContactForms>Linkedin: 
-                    <ContactFormsLink href='https://www.linkedin.com/in/wesley-felix-3b2168234/'> Wesley Felix</ContactFormsLink>
-                </ContactForms>
-                <ContactForms>Celular: 
-                    <ContactFormsLink> 11 91347-6468</ContactFormsLink>
-                </ContactForms>
-            </FooterContainer>
-        </>
-    )
+  return (
+    <FooterContainer>
+        <h4>@GhoostWebsite</h4>
+        <h4>Site realizado por Wesley Felix da Silva. Imagens originais foram geradas com IAs generativas.</h4>
+        <div>
+            <a href="https://github.com/WesleyGhoost">Linkedin</a>
+            <a href="https://www.linkedin.com/in/wesley-felix-3b2168234/">Github</a>
+        </div>
+    </FooterContainer>
+  )
 }
 
 export default Footer
