@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Link } from 'react-scroll'
-import { Burger, Menu, NavBurger, NavDefault } from "../../Styles/navbarStyle"
+import { Burger, Menu, NavBurger, NavDefault } from "../../Styles/NavbarStyle"
 import './navbar.css'
 
 function Navbar() {
@@ -200,7 +200,7 @@ function Navbar() {
                         <li>
                             <Link
                                 onClick={closeMenu}
-                                to="footer"
+                                to="contact"
                                 spy={true}
                                 smooth={true}
                                 offset={-100}

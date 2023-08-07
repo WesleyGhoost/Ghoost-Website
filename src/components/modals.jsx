@@ -1,5 +1,5 @@
 import React from 'react'
-import { SuccessModalContainer, ErrorModalContainer, IncompleteModalContainer } from '../Styles/modalsStyle'
+import { SuccessModalContainer, ErrorModalContainer, IncompleteModalContainer } from '../Styles/ModalsStyle'
 
 export function SuccessModal(props) {
   return (

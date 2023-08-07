@@ -1,4 +1,4 @@
-import { ContainerAll } from "./Styles/containerAll";
+import { ContainerAll } from "./Styles/ContainerAll";
 import Navbar from "./components/navbar/navbar";
 import Intro from "./components/intro";
 import About from './components/about'

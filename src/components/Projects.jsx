@@ -1,6 +1,6 @@
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
-import { ProjectsContainer, ProjectsSubTitle, ProjectsTitle, ProjectsColumn, ProjectInfo } from '../Styles/projectsStyle';
+import { ProjectsContainer, ProjectsSubTitle, ProjectsTitle, ProjectsColumn, ProjectInfo } from '../Styles/ProjectsStyle';
 
 import GoldStar from '../img/gold star.png'
 import BlueStar from '../img/blue star.png'
@@ -18,12 +18,59 @@ import TalkingWithChars from '../img/talking-with-chars.png'
 
 function Projects() {
     const revealProjects = () => {
-        ScrollReveal().reveal('.project-title', { reset: false, duration: 1000, delay: 150 })
-        ScrollReveal().reveal('.project-subtitle', { reset: false, duration: 1000, delay: 150 })
-        ScrollReveal().reveal('.projects', { reset: false, duration: 1000, delay: 250, origin: 'left', distance: '30px' })
-        ScrollReveal().reveal('.project-star', { reset: false, duration: 1000, delay: 250, origin: 'left', distance: '30px' })
-        ScrollReveal().reveal('.project-details', { reset: false, duration: 1000, delay: 250, origin: 'left', distance: '30px' })
-        ScrollReveal().reveal('.project-descrip', { reset: false, duration: 1000 })
+        ScrollReveal().reveal(
+            '.project-title', 
+            { 
+                reset: false,
+                duration: 1000, 
+                delay: 150 
+            }
+        )
+        ScrollReveal().reveal(
+            '.project-subtitle', 
+            { 
+                reset: false, 
+                duration: 1000, 
+                delay: 150 
+            }
+        )
+        ScrollReveal().reveal(
+            '.projects', 
+            { 
+                reset: false, 
+                duration: 1000, 
+                delay: 250, 
+                origin: 'left', 
+                distance: '30px' 
+            }
+        )
+        ScrollReveal().reveal(
+            '.project-star', 
+            { 
+                reset: false, 
+                duration: 1000, 
+                delay: 250, 
+                origin: 'left', 
+                distance: '30px' 
+            }
+        )
+        ScrollReveal().reveal(
+            '.project-details', 
+            { 
+                reset: false, 
+                duration: 1000, 
+                delay: 250, 
+                origin: 'left', 
+                distance: '30px' 
+            }
+        )
+        ScrollReveal().reveal(
+            '.project-descrip', 
+            { 
+                reset: false, 
+                duration: 1000 
+            }
+        )
     }
 
     useEffect(() => {

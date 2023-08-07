@@ -1,7 +1,7 @@
 import Github from '../img/github.png'
 import Hollow from '../img/hollow-knight.png'
 
-import { IntroContainer, IntroLinks, IntroMain } from "../Styles/introStyle";
+import { IntroContainer, IntroLinks, IntroMain } from "../Styles/IntroStyle";
 
 function Intro() {
     return (

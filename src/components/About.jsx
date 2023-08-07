@@ -2,12 +2,30 @@ import Computer from '../img/computer.jpg'
 
 import ScrollReveal from 'scrollreveal'
 import { useEffect } from 'react'
-import { AboutMe, AboutContainer, AboutImg } from "../Styles/aboutStyle"
+import { AboutMe, AboutContainer, AboutImg } from "../Styles/AboutStyle"
 
 function About() {
     const revealAbout = () => {
-        ScrollReveal().reveal('.about', { reset: false, duration: 1500, delay: 300, origin: 'right', distance: '30px' })
-        ScrollReveal().reveal('.about-img', { reset: false, duration: 1500, delay: 500, origin: 'left', distance: '30px' })
+        ScrollReveal().reveal(
+            '.about', 
+            { 
+                reset: false, 
+                duration: 1500, 
+                delay: 300, 
+                origin: 'right', 
+                distance: '30px' 
+            }
+        )
+        ScrollReveal().reveal(
+            '.about-img', 
+            { 
+                reset: false, 
+                duration: 1500, 
+                delay: 500, 
+                origin: 'left', 
+                distance: '30px' 
+            }
+        )
     }
 
     useEffect(() => {

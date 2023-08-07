@@ -1,9 +1,28 @@
 import emailjs from '@emailjs/browser'
-import { ContactContainer, ContactTitle, ContactForm } from "../Styles/contactStyle";
+import { ContactContainer, ContactTitle, ContactForm } from "../Styles/ContactStyle";
 import { useState } from 'react';
 import { ErrorModal, IncompleteModal, SuccessModal } from './modals';
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
 
 function Contact() {
+    const revealContact = () => {
+        ScrollReveal().reveal(
+            '.contact',
+            {
+                reset: false,
+                duration: 2000,
+                delay: 300,
+                origin: 'bottom',
+                distance: '80px'
+            }
+        )
+    }
+
+    useEffect(() => {
+        revealContact()
+    })
+
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
@@ -45,7 +64,10 @@ function Contact() {
 
     return (
         <>
-            <ContactContainer id="footer">
+            <ContactContainer
+                className='contact'
+                id="contact"
+            >
                 <ContactTitle>Contato</ContactTitle>
                 <h3>Envie um email diretamente para mim preenchendo as informações abaixo!</h3>
                 <ContactForm onSubmit={sendEmail}>

@@ -1,14 +1,37 @@
 import ScrollReveal from 'scrollreveal'
 import { useEffect } from "react";
-import { LanguagesTitle, LanguagesContainer, LanguagesExamples } from "../Styles/languagesStyle";
+import { LanguagesTitle, LanguagesContainer, LanguagesExamples } from "../Styles/LanguagesStyle";
 
 import NextIcon from '../img/nextjs.png'
 
 function Languages() {
     const revealLanguages = () => {
-        ScrollReveal().reveal('.lang-title', { reset: false, duration: 1500, delay: 150 })
-        ScrollReveal().reveal('.langs', { reset: false, duration: 1500, delay: 150 })
-        ScrollReveal().reveal('.lang-reposit', { reset: false, duration: 1500, delay: 400, origin: 'left', distance: '30px' })
+        ScrollReveal().reveal(
+            '.lang-title',
+            {
+                reset: false,
+                duration: 1500,
+                delay: 150
+            }
+        )
+        ScrollReveal().reveal(
+            '.langs',
+            {
+                reset: false,
+                duration: 1500,
+                delay: 150
+            }
+        )
+        ScrollReveal().reveal(
+            '.lang-reposit',
+            {
+                reset: false,
+                duration: 1500,
+                delay: 400,
+                origin: 'left',
+                distance: '30px'
+            }
+        )
     }
 
     useEffect(() => {
@@ -17,7 +40,12 @@ function Languages() {
 
     return (
         <>
-            <LanguagesTitle className='lang-title' id='languages'>Linguagens e ferramentas utilizadas</LanguagesTitle>
+            <LanguagesTitle
+                className='lang-title'
+                id='languages'
+            >
+                Linguagens e ferramentas utilizadas
+            </LanguagesTitle>
             <LanguagesContainer>
                 <img
                     className='langs'
