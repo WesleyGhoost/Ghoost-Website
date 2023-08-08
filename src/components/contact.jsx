@@ -30,7 +30,7 @@ function Contact() {
     const [showErrorModal, setShowErrorModal] = useState('none')
     const [showIncompleteModal, setShowIncompleteModal] = useState('none')
 
-    const error = ''
+    let error = ''
 
     const sendEmail = (e) => {
         e.preventDefault()
