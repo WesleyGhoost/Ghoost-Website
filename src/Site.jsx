@@ -5,7 +5,7 @@ import About from './components/About'
 import Languages from './components/Languages'
 import Projects from "./components/Projects";
 import Details from "./components/Details";
-import Contact from "./components/Contact";
+import Contact from "./components/contact";
 import Footer from "./components/Footer";
 
 const Site = () => {

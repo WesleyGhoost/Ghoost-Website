@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser'
-import { ContactContainer, ContactTitle, ContactForm } from "../Styles/ContactStyle";
+import { ContactContainer, ContactTitle, ContactForm } from "../Styles/contactStyle";
 import { useState } from 'react';
-import { ErrorModal, IncompleteModal, SuccessModal } from './Modals';
+import { ErrorModal, IncompleteModal, SuccessModal } from './modals';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
 
