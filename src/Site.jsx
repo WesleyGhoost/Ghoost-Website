@@ -1,5 +1,5 @@
 import { ContainerAll } from "./Styles/ContainerAll";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/navbar/navbar";
 import Intro from "./components/Intro";
 import About from './components/About'
 import Languages from './components/Languages'
