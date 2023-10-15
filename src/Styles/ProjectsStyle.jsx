@@ -125,6 +125,14 @@ export const ProjectInfo = styled.div`
     p {
       color: #ffffffc5;
       text-align: center;
+
+      a:link {
+        color: #009e00;
+      }
+
+      a:visited {
+        color: #009e00;
+      }
     }
   }
 `

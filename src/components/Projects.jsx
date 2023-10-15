@@ -15,6 +15,7 @@ import JumperMario from '../img/jumper-mario.png'
 import TopMovies from '../img/top-5-filmes.png'
 import GithubFinder from '../img/github-finder.png'
 import TalkingWithChars from '../img/talking-with-chars.png'
+import ShoppingCart from '../img/carrinho-de-compras.png'
 
 function Projects() {
     const revealProjects = () => {
@@ -245,6 +246,34 @@ function Projects() {
                             </p>
                         </details>
                     </ProjectInfo>
+
+                    <ProjectInfo>
+                        <img
+                            className='project-star'
+                            src={BlueStar}
+                            alt="estrela azul"
+                        />
+                        <a
+                            className='projects'
+                            href="https://wesleyghoost.github.io/Jumper-Mario/"
+                        >
+                            <img
+                                height="200"
+                                width="380"
+                                src={JumperMario}
+                                alt="Jumper Mario"
+                            />
+                        </a>
+                        <details className='project-details'>
+                            <summary>Jumper Mario</summary>
+                            <p className='project-descrip'>
+                                Fiz este projeto me baseando no vídeo do <em>Manual do Dev</em>. Este projeto trás uma projeção bem parecida do que seria o sistema de pulo do personagem Mario em seus jogos. Você utiliza qualquer botão para pular sobre os canos, e quando você encosta em um deles, fim de jogo. <strong>Diferenciação:</strong> Um container de referenciação ao Game Over aparece, e é possível reiniciar o jogo a partir do mesmo.
+                            </p>
+                            <p className='project-descrip'>
+                                Repositório: <a href="https://github.com/WesleyGhoost/Jumper-Mario">jumper-mario</a>
+                            </p>
+                        </details>
+                    </ProjectInfo>
                 </ProjectsColumn>
 
                 <ProjectsColumn>
@@ -280,7 +309,7 @@ function Projects() {
                         <img
                             className='project-star'
                             src={BlueStar}
-                            alt="estrela dourada"
+                            alt="estrela azul"
                         />
                         <a
                             className="projects"
@@ -300,6 +329,34 @@ function Projects() {
                             </p>
                             <p className='project-descrip'>
                                 Repositório: <a href="https://github.com/WesleyGhoost/Github-Finder">github-finder</a>
+                            </p>
+                        </details>
+                    </ProjectInfo>
+
+                    <ProjectInfo>
+                        <img
+                            className='project-star'
+                            src={BlueStar}
+                            alt="estrela azul"
+                        />
+                        <a
+                            className="projects"
+                            href="https://carrinho-de-compras-ashen.vercel.app/"
+                        >
+                            <img
+                                height="200"
+                                width="380"
+                                src={ShoppingCart}
+                                alt="Carrinho de Compras"
+                            />
+                        </a>
+                        <details className='project-details'>
+                            <summary>Carrinho de Compras</summary>
+                            <p className='project-descrip'>
+                                Projeto realizado com base no conteúdo do desenvolvedor <em>Manual do Dev</em>. Este projeto consiste em um carrinho de compras utilizando a API do Mercado Livre, onde o mesmo foi originalmente realizado utilizando Javascript, ReactJS e CSS. <strong>Diferenciação:</strong> utilização do Typescript (ao invés do JS), filtragem de busca, páginas únicas para cada produto baseado em seus IDs, e localStorage para salvar permanentemente os produtos no carrinho caso o usuário reinicie ou feche o browser .
+                            </p>
+                            <p className='project-descrip'>
+                                Repositório: <a href="https://github.com/WesleyGhoost/Carrinho-de-Compras">carrinho-de-compras</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -328,34 +385,6 @@ function Projects() {
                             </p>
                             <p className='project-descrip'>
                                 Repositório: <a href="https://github.com/WesleyGhoost/Relaxing-Form">relaxing-form</a>
-                            </p>
-                        </details>
-                    </ProjectInfo>
-
-                    <ProjectInfo>
-                        <img
-                            className='project-star'
-                            src={BlueStar}
-                            alt="estrela dourada"
-                        />
-                        <a
-                            className='projects'
-                            href="https://wesleyghoost.github.io/Jumper-Mario/"
-                        >
-                            <img
-                                height="200"
-                                width="380"
-                                src={JumperMario}
-                                alt="Jumper Mario"
-                            />
-                        </a>
-                        <details className='project-details'>
-                            <summary>Jumper Mario</summary>
-                            <p className='project-descrip'>
-                                Fiz este projeto me baseando no vídeo do <em>Manual do Dev</em>. Este projeto trás uma projeção bem parecida do que seria o sistema de pulo do personagem Mario em seus jogos. Você utiliza qualquer botão para pular sobre os canos, e quando você encosta em um deles, fim de jogo. <strong>Diferenciação:</strong> Um container de referenciação ao Game Over aparece, e é possível reiniciar o jogo a partir do mesmo.
-                            </p>
-                            <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Jumper-Mario">jumper-mario</a>
                             </p>
                         </details>
                     </ProjectInfo>
