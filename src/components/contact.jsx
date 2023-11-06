@@ -12,9 +12,9 @@ function Contact() {
             {
                 reset: false,
                 duration: 2000,
-                delay: 300,
+                delay: 200,
                 origin: 'bottom',
-                distance: '80px'
+                distance: '5px'
             }
         )
     }

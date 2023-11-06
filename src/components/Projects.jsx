@@ -104,7 +104,7 @@ function Projects() {
                     src={RedStar}
                     alt="estrela vermelha"
                 />
-                = Melhor projeto.
+                = Melhor projeto (para mim).
             </ProjectsSubTitle>
             <ProjectsSubTitle className='project-subtitle'>
                 <img

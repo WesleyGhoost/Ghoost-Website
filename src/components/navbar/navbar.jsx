@@ -111,10 +111,10 @@ function Navbar() {
                     </li>
                     <li>
                         <Link
-                            to="footer"
+                            to="contact"
                             spy={true}
                             smooth={true}
-                            offset={-100}
+                            offset={-70}
                             duration={500}
                         >
                             Contato
