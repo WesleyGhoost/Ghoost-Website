@@ -148,10 +148,13 @@ function Projects() {
                         <details className='project-details'>
                             <summary>PlayFlix</summary>
                             <p className='project-descrip'>
-                                Serviço de games ao estilo Netflix. Projeto focado no uso de ReactJS, com a utilização de React-Router-Dom para criar diversas rotas, e React-Modal para gerar modais a partir de interações. Com responsivo para todos os aparelhos.
+                                <strong>Descrição:</strong> Serviço de games ao estilo Netflix. Projeto focado no uso de ReactJS, com a utilização de React-Router-Dom para criar diversas rotas, e React-Modal para gerar modais a partir de interações. Com responsivo para todos os aparelhos.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/PlayFlix">playflix</a>
+                                <strong>Realizado em:</strong> março de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/PlayFlix">playflix</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -183,10 +186,13 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Talking With Characters</summary>
                             <p className='project-descrip'>
-                                Um chat com personagens fictícios e não fictícios. As ferramentas e linguagens utilizadas foram: NextJS, Typescript, Styled-Components (estilização), e a API do ChatGPT para o sistema de conversa. As artes dos personagens foram feitas pela IA generativa de imagens BlueWillow.
+                                <strong>Descrição:</strong> Um chat com personagens fictícios e não fictícios. As ferramentas e linguagens utilizadas foram: NextJS, Typescript, Styled-Components (estilização), e a API do ChatGPT para o sistema de conversa. As artes dos personagens foram feitas pela IA generativa de imagens BlueWillow.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Talking-With-Chars">talking-with-chars</a>
+                                <strong>Realizado em:</strong> julho de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Talking-With-Chars">talking-with-chars</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -211,10 +217,13 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Future Corp</summary>
                             <p className='project-descrip'>
-                                Landing page para uma empresa de tecnologia fictícia, onde a mesma contém projetos com tecnologias super avançadas. Projeto realizado com ReactJS, utilizando styled-components para estilização, e react-router-dom para alternância das páginas. Responsivo para todos os dispositivos.
+                                <strong>Descrição:</strong> Landing page para uma empresa de tecnologia fictícia, onde a mesma contém projetos com tecnologias super avançadas. Projeto realizado com ReactJS, utilizando styled-components para estilização, e react-router-dom para alternância das páginas. Responsivo para todos os dispositivos.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Future-Corp">future-corp</a>
+                                <strong>Realizado em:</strong> março de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Future-Corp">future-corp</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -239,10 +248,16 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Top 5 Filmes</summary>
                             <p className='project-descrip'>
-                                Projeto realizado em uma imersão dev da <em>Alura</em>. Um projeto para listar nossos filmes favoritos. Ele utiliza Javascript para a inserção das imagens. <strong>Diferenciação:</strong> Utilizei do que havia aprendido na época para procurar e acrescentar os meus filmes favoritos, fazendo minha própria lista.
+                                <strong>Descrição:</strong> Projeto realizado em uma imersão dev da <em>Alura</em>. Um projeto para listar nossos filmes favoritos. Ele utiliza Javascript para a inserção das imagens. 
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Meu-Top-5-Filmes">top-filmes</a>
+                                <strong>Diferenciação:</strong> Utilizei do que havia aprendido na época para procurar e acrescentar os meus filmes favoritos, fazendo minha própria lista.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Realizado em:</strong> fevereiro de 2022
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Meu-Top-5-Filmes">top-filmes</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -267,10 +282,16 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Jumper Mario</summary>
                             <p className='project-descrip'>
-                                Fiz este projeto me baseando no vídeo do <em>Manual do Dev</em>. Este projeto trás uma projeção bem parecida do que seria o sistema de pulo do personagem Mario em seus jogos. Você utiliza qualquer botão para pular sobre os canos, e quando você encosta em um deles, fim de jogo. <strong>Diferenciação:</strong> Um container de referenciação ao Game Over aparece, e é possível reiniciar o jogo a partir do mesmo.
+                                <strong>Descrição:</strong> Fiz este projeto me baseando no vídeo do <em>Manual do Dev</em>. Este projeto trás uma projeção bem parecida do que seria o sistema de pulo do personagem Mario em seus jogos. Você utiliza qualquer botão para pular sobre os canos, e quando você encosta em um deles, fim de jogo.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Jumper-Mario">jumper-mario</a>
+                                <strong>Diferenciação:</strong> Um container de referenciação ao Game Over aparece, e é possível reiniciar o jogo a partir do mesmo.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Realizado em:</strong> novembro de 2022
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Jumper-Mario">jumper-mario</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -291,16 +312,19 @@ function Projects() {
                                 height="200"
                                 width="380"
                                 src={ClassicTracks}
-                                alt="Landing Page"
+                                alt="Trilhas Sonoras de Games Clássicos"
                             />
                         </a>
                         <details className='project-details'>
                             <summary>Trilhas Sonoras de Games</summary>
                             <p className='project-descrip'>
-                                Mais um projeto voltado ao mundo de games. Esse projeto tem foco na utilização da tag audio do html, junto com informações precisas sobre o conteúdo, e apresenta responsividade para desktop e aparelhos com tela entre 500 e 600 pixels.
+                                <strong>Descrição:</strong> Mais um projeto voltado ao mundo de games. Esse projeto tem foco na utilização da tag audio do html, junto com informações precisas sobre o conteúdo, e apresenta responsividade para desktop e aparelhos com tela entre 500 e 600 pixels.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Trilhas-Sonoras-Classicas-de-Games">trilhas-de-games</a>
+                                <strong>Realizado em:</strong> janeiro de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Trilhas-Sonoras-Classicas-de-Games">trilhas-de-games</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -325,10 +349,16 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Github Finder</summary>
                             <p className='project-descrip'>
-                                Projeto realizado com base no conteúdo do desenvolvedor <em>Matheus Battisti</em>. Ele se trata de um buscador de usuários do Github, Com foco na utilização de ReactJs + Typescript e chamada de API, especifícamente a API do Github. Estilização realizada com o uso de modules.css. <strong>Diferenciação:</strong> Componente de loading e requisição da bio do usuário buscado.
+                                <strong>Descrição:</strong> Projeto realizado com base no conteúdo do desenvolvedor <em>Matheus Battisti</em>. Ele se trata de um buscador de usuários do Github, Com foco na utilização de ReactJs + Typescript e chamada de API, especifícamente a API do Github. Estilização realizada com o uso de modules.css.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Github-Finder">github-finder</a>
+                                <strong>Diferenciação:</strong> Componente de loading e requisição da bio do usuário buscado.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Realizado em:</strong> abril de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Github-Finder">github-finder</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -353,10 +383,16 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Carrinho de Compras</summary>
                             <p className='project-descrip'>
-                                Projeto realizado com base no conteúdo do desenvolvedor <em>Manual do Dev</em>. Este projeto consiste em um carrinho de compras utilizando a API do Mercado Livre, onde o mesmo foi originalmente realizado utilizando Javascript, ReactJS e CSS. <strong>Diferenciação:</strong> utilização do Typescript (ao invés do JS), filtragem de busca, páginas únicas para cada produto baseado em seus IDs, e localStorage para salvar permanentemente os produtos no carrinho caso o usuário reinicie ou feche o browser .
+                                <strong>Descrição:</strong> Projeto realizado com base no conteúdo do desenvolvedor <em>Manual do Dev</em>. Este projeto consiste em um carrinho de compras utilizando a API do Mercado Livre, onde o mesmo foi originalmente realizado utilizando Javascript, ReactJS e CSS.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Carrinho-de-Compras">carrinho-de-compras</a>
+                                <strong>Diferenciação:</strong> utilização do Typescript (ao invés do JS), filtragem de busca, páginas únicas para cada produto baseado em seus IDs, e localStorage para salvar permanentemente os produtos no carrinho caso o usuário reinicie ou feche o browser.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Realizado em:</strong> agosto de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Carrinho-de-Compras">carrinho-de-compras</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -381,10 +417,13 @@ function Projects() {
                         <details className='project-details'>
                             <summary>Relaxing Form</summary>
                             <p className='project-descrip'>
-                                Formulário com músicas relaxantes (lofi) para o usuário preencher o mesmo no seu próprio tempo. Utilizei Glider.js para ocorrer a transição do formulário de etapa em etapa, Bulma.CSS para o container geral do site, Animate.css para abertura no primeiro card e EmailJS para envio das respostas do usuário para o email do mesmo. Responsivo para Desktop e aparelhos com telas entre 600 e 758 pixels.
+                                <strong>Descrição:</strong> Formulário com músicas relaxantes (lofi) para o usuário preencher o mesmo no seu próprio tempo. Utilizei Glider.js para ocorrer a transição do formulário de etapa em etapa, Bulma.CSS para o container geral do site, Animate.css para abertura no primeiro card e EmailJS para envio das respostas do usuário para o email do mesmo. Responsivo para Desktop e aparelhos com telas entre 600 e 758 pixels.
                             </p>
                             <p className='project-descrip'>
-                                Repositório: <a href="https://github.com/WesleyGhoost/Relaxing-Form">relaxing-form</a>
+                                <strong>Realizado em:</strong> janeiro de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Relaxing-Form">relaxing-form</a>
                             </p>
                         </details>
                     </ProjectInfo>
