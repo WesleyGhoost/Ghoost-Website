@@ -16,6 +16,8 @@ import TopMovies from '../img/top-5-filmes.png'
 import GithubFinder from '../img/github-finder.png'
 import TalkingWithChars from '../img/talking-with-chars.png'
 import ShoppingCart from '../img/carrinho-de-compras.png'
+import RE4LP from '../img/re4-lp.png'
+import WeatherApp from '../img/weather-app.png'
 
 function Projects() {
     const revealProjects = () => {
@@ -205,25 +207,59 @@ function Projects() {
                         />
                         <a
                             className='projects'
-                            href="https://future-corp.vercel.app/"
+                            href="https://resident-evil-4-lp.netlify.app/"
                         >
                             <img
                                 height="200"
                                 width="380"
-                                src={FutureCorp}
-                                alt="Future Corp"
+                                src={RE4LP}
+                                alt="RE4 LP"
                             />
                         </a>
                         <details className='project-details'>
-                            <summary>Future Corp</summary>
+                            <summary>RE4 - LP</summary>
                             <p className='project-descrip'>
-                                <strong>Descrição:</strong> Landing page para uma empresa de tecnologia fictícia, onde a mesma contém projetos com tecnologias super avançadas. Projeto realizado com ReactJS, utilizando styled-components para estilização, e react-router-dom para alternância das páginas. Responsivo para todos os dispositivos.
+                                <strong>Descrição:</strong> Uma releitura do site oficial do game 'Resident Evil 4', produzido pela Capcom. Neste projeto utilizei o SCSS (pré-processador CSS) pela primeira vez. Juntamente com Bootstrap em elementos específicos da página (ex: sliders). E juntamente com JS cheguei ao ponto que eu queria da minha releitura.
                             </p>
                             <p className='project-descrip'>
-                                <strong>Realizado em:</strong> março de 2023
+                                <strong>Realizado em:</strong> abril de 2024
                             </p>
                             <p className='project-descrip'>
-                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Future-Corp">future-corp</a>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/RE4-LP">RE4-LP</a>
+                            </p>
+                        </details>
+                    </ProjectInfo>
+
+                    <ProjectInfo>
+                        <img
+                            className='project-star'
+                            src={BlueStar}
+                            alt="estrela azul"
+                        />
+                        <a
+                            className='projects'
+                            href="//https://weatherapp-ghoost.netlify.app/"
+                        >
+                            <img
+                                height="200"
+                                width="380"
+                                src={WeatherApp}
+                                alt="Weather App"
+                            />
+                        </a>
+                        <details className='project-details'>
+                            <summary>Weather App</summary>
+                            <p className='project-descrip'>
+                                <strong>Descrição:</strong> Projeto realizado com base no conteúdo do desenvolvedor Matheus Battisti. O projeto retorna a climatização de uma cidade ou país digitado pelo usuário. Temos 3 APIs num todo nesse projeto, a API da WeatherMap que retorna informações de temperatura, força do vento, umidade, entre outros, a FlagsAPI que retorna ícones de países diversos, e a API da Unsplash que nesse projeto retorna as imagens das paisagens dos países. Projeto construido com Javascript, CSS e HTML.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Diferenciação:</strong> Utilização das APIs da Unsplash e FlagsAPI, elemento de loader.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Realizado em:</strong> maio de 2024
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Weather-App">weather-app</a>
                             </p>
                         </details>
                     </ProjectInfo>
@@ -393,6 +429,37 @@ function Projects() {
                             </p>
                             <p className='project-descrip'>
                                 <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Carrinho-de-Compras">carrinho-de-compras</a>
+                            </p>
+                        </details>
+                    </ProjectInfo>
+
+                    <ProjectInfo>
+                        <img
+                            className='project-star'
+                            src={GoldStar}
+                            alt="estrela dourada"
+                        />
+                        <a
+                            className='projects'
+                            href="https://future-corp.vercel.app/"
+                        >
+                            <img
+                                height="200"
+                                width="380"
+                                src={FutureCorp}
+                                alt="Future Corp"
+                            />
+                        </a>
+                        <details className='project-details'>
+                            <summary>Future Corp</summary>
+                            <p className='project-descrip'>
+                                <strong>Descrição:</strong> Landing page para uma empresa de tecnologia fictícia, onde a mesma contém projetos com tecnologias super avançadas. Projeto realizado com ReactJS, utilizando styled-components para estilização, e react-router-dom para alternância das páginas. Responsivo para todos os dispositivos.
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Realizado em:</strong> março de 2023
+                            </p>
+                            <p className='project-descrip'>
+                                <strong>Repositório:</strong> <a href="https://github.com/WesleyGhoost/Future-Corp">future-corp</a>
                             </p>
                         </details>
                     </ProjectInfo>

@@ -91,6 +91,20 @@ function Languages() {
                 />
                 <img
                     className='langs'
+                    height="65"
+                    width="65"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" 
+                    alt="SASS" 
+                />
+                <img
+                    className='langs'
+                    height="65"
+                    width="65"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" 
+                    alt="Bootstrap" 
+                />
+                <img
+                    className='langs'
                     height="55"
                     width="95"
                     src={NextIcon}
