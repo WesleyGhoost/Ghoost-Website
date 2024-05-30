@@ -12,6 +12,14 @@ export const ProjectsSubTitle = styled.h3`
   text-align: center;
   color: #ffffffbb;
 
+  a:link {
+    color:#009e00
+  }
+
+  a:visited {
+    color: #009e00;
+  }
+
   @media screen and (min-width: 320px) and (max-width: 480px)  {
     width: 70%;
   }
@@ -79,11 +87,9 @@ export const ProjectInfo = styled.div`
   }
 
   a > img {
-    opacity: 40%;
-
-    &:hover {
-      opacity: 100%;
-    }
+    width: 380px;
+    height: 200px;
+    position: relative;
 
     @media screen and (min-width: 769px) and (max-width: 1023px)  {
       width: 300px;
@@ -101,6 +107,13 @@ export const ProjectInfo = styled.div`
     }
   }
 
+  h3 {
+    color: white;
+    max-width: 70%;
+    text-align: center;
+    top: 40px;
+    left: 40px;
+  }
 
   details {
     width: 100%;
