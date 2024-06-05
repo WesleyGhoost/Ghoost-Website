@@ -44,11 +44,15 @@ function Projects() {
     const column2Projects = projects.filter((_, index) => index % 2 !== 0)
 
     const handleMouseEnter = (id) => {
-        setHoverStates(prev => ({ ...prev, [id]: true }));
+        if (window.innerWidth > 768) {
+            setHoverStates(prev => ({ ...prev, [id]: true }));
+        }
     }
 
     const handleMouseLeave = (id) => {
-        setHoverStates(prev => ({ ...prev, [id]: false }));
+        if (window.innerWidth > 768) {
+            setHoverStates(prev => ({ ...prev, [id]: false }));
+        }
     }
 
     const checkMessageForResponsive = (minScreenWidthForCheckResponsive, projectId) => {
@@ -140,7 +144,7 @@ function Projects() {
                                         ...prev,
                                         [project.id]: checkMessageForResponsive(project.minScreenWidthForCheckResponsive, project.id)
                                     }))}
-                                    style={hoverStates[project.id] ? { opacity: '100%' } : { opacity: '25%' }}
+                                    style={window.innerWidth < 769 ? (showMessages[project.id] === 'block' ? { opacity: '25%' } : { opacity: '100%' }) : (hoverStates[project.id] ? { opacity: '100%' } : { opacity: '25%' })}
                                     onMouseEnter={hoverEnabled[project.id] !== false ? () => handleMouseEnter(project.id) : undefined}
                                     onMouseLeave={hoverEnabled[project.id] !== false ? () => handleMouseLeave(project.id) : undefined}
                                     src={project.img}
@@ -186,7 +190,7 @@ function Projects() {
                                         ...prev,
                                         [project.id]: checkMessageForResponsive(project.minScreenWidthForCheckResponsive, project.id)
                                     }))}
-                                    style={hoverStates[project.id] ? { opacity: '100%' } : { opacity: '25%' }}
+                                    style={window.innerWidth < 769 ? (showMessages[project.id] === 'block' ? { opacity: '25%' } : { opacity: '100%' }) : (hoverStates[project.id] ? {opacity: '100%'} : { opacity: '25%' })}
                                     onMouseEnter={hoverEnabled[project.id] !== false ? () => handleMouseEnter(project.id) : undefined}
                                     onMouseLeave={hoverEnabled[project.id] !== false ? () => handleMouseLeave(project.id) : undefined}
                                     src={project.img}
