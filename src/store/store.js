@@ -1,4 +1,4 @@
-import { configureStore } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
 import languageSlice from './languageSlice'
 
 export const store = configureStore({
