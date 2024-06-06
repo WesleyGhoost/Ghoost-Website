@@ -1,5 +1,27 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { toggleToPT, toggleToEN } from '../store/languageSlice' 
 import { SuccessModalContainer, ErrorModalContainer, IncompleteModalContainer } from '../Styles/modalsStyle'
+
+export function LanguageModal() {
+  const dispatch = useDispatch()
+
+  const handleToggleToPT = () => {
+    dispatch(toggleToPT())
+  }
+
+  const handleToggleToEN = () => {
+    dispatch(toggleToEN())
+  }
+
+  return (
+    <div>
+      <p>mudar idioma?</p>
+      <button onClick={handleToggleToPT}></button>
+      <button onClick={handleToggleToEN}></button>
+    </div>
+  )
+}
 
 export function SuccessModal(props) {
   return (
