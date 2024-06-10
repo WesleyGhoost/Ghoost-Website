@@ -1,11 +1,14 @@
 import emailjs from '@emailjs/browser'
 import { ContactContainer, ContactTitle, ContactForm } from "../Styles/contactStyle";
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { ErrorModal, IncompleteModal, SuccessModal } from './modals';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
 
 function Contact() {
+    const language = useSelector((state) => state.language)
+
     const revealContact = () => {
         ScrollReveal().reveal(
             '.contact',
@@ -69,7 +72,12 @@ function Contact() {
                 id="contact"
             >
                 <ContactTitle>Contato</ContactTitle>
-                <h3>Envie um email diretamente para mim preenchendo as informações abaixo!</h3>
+                <h3>
+                    {language === 'pt' ? 
+                    'Envie um email diretamente para mim preenchendo as informações abaixo!' :
+                    'Send an email directly to me filling the informations below!'
+                    }
+                </h3>
                 <ContactForm onSubmit={sendEmail}>
                     <input
                         type="text"

@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
 import { Link } from 'react-scroll'
+import { useSelector } from "react-redux"
 import { Burger, Menu, NavBurger, NavDefault } from "../../Styles/NavbarStyle"
 import './navbar.css'
 
 function Navbar() {
+    const language = useSelector((state) => state.language)
+
     const [colorNav, setColorNav] = useState(false)
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [burger, setBurger] = useState('burger-bar unclicked')
@@ -72,7 +75,7 @@ function Navbar() {
                             offset={-100}
                             duration={500}
                         >
-                            Sobre mim
+                            {language === 'pt' ? 'Sobre mim' : 'About me'}
                         </Link>
                     </li>
                     <li>
@@ -83,7 +86,7 @@ function Navbar() {
                             offset={-100}
                             duration={500}
                         >
-                            Linguagens
+                            {language === 'pt' ? 'Linguagens' : 'Languages'}
                         </Link>
                     </li>
                     <li>
@@ -94,7 +97,7 @@ function Navbar() {
                             offset={-100}
                             duration={500}
                         >
-                            Projetos
+                            {language === 'pt' ? 'Projetos' : 'Projects'}
                         </Link>
                     </li>
                     <li>
@@ -105,7 +108,7 @@ function Navbar() {
                             offset={-100}
                             duration={500}
                         >
-                            Detalhes do site
+                            {language === 'pt' ? 'Detalhes do site' : 'Website Details'}
                         </Link>
 
                     </li>
@@ -117,7 +120,7 @@ function Navbar() {
                             offset={-70}
                             duration={500}
                         >
-                            Contato
+                            {language === 'pt' ? 'Contato' : 'Contact'}
                         </Link>
                     </li>
                 </ul>
@@ -158,7 +161,7 @@ function Navbar() {
                                 offset={-100}
                                 duration={500}
                             >
-                                Sobre mim
+                                {language === 'pt' ? 'Sobre mim' : 'About me'}
                             </Link>
                         </li>
                         <li>
@@ -170,7 +173,7 @@ function Navbar() {
                                 offset={-100}
                                 duration={500}
                             >
-                                Linguagens
+                                {language === 'pt' ? 'Linguagens' : 'Languages'}
                             </Link>
                         </li>
                         <li>
@@ -182,7 +185,7 @@ function Navbar() {
                                 offset={-100}
                                 duration={500}
                             >
-                                Projetos
+                                {language === 'pt' ? 'Projetos' : 'Projects'}
                             </Link>
                         </li>
                         <li>
@@ -194,7 +197,7 @@ function Navbar() {
                                 offset={-100}
                                 duration={500}
                             >
-                                Detalhes do site
+                                {language === 'pt' ? 'Detalhes do site' : 'Website details'}
                             </Link>
                         </li>
                         <li>
@@ -206,7 +209,7 @@ function Navbar() {
                                 offset={-100}
                                 duration={500}
                             >
-                                Contato
+                                {language === 'pt' ? 'Contato' : 'Contact'}
                             </Link>
                         </li>
                     </ul>

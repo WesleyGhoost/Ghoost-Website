@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { toggleToPT, toggleToEN } from '../store/languageSlice' 
+import { toggleToPT, toggleToEN } from '../store/languageSlice'
+import { useSelector } from 'react-redux' 
 import { SuccessModalContainer, ErrorModalContainer, IncompleteModalContainer } from '../Styles/modalsStyle'
 
 export function LanguageModal() {
@@ -24,9 +25,14 @@ export function LanguageModal() {
 }
 
 export function SuccessModal(props) {
+  const language = useSelector((state) => state.language)
+
   return (
     <SuccessModalContainer display={props.display}>
-        <p>Email enviado com sucesso!</p>
+        {language === 'pt' ? 
+        <p>Email enviado com sucesso!</p> :
+        <p>Email sent successfully!</p>
+        }
         <button onClick={props.close}>OK</button>
     </SuccessModalContainer>
   )
@@ -42,9 +48,14 @@ export function ErrorModal(props) {
 }
 
 export function IncompleteModal(props) {
+  const language = useSelector((state) => state.language)
+
   return (
     <IncompleteModalContainer display={props.display}>
-        <p>Por favor, preencha todas as informações.</p>
+        {language === 'pt' ? 
+        <p>Por favor, preencha todas as informações.</p> :
+        <p>Please, fill all the informations.</p>
+        }
         <button onClick={props.close}>OK</button>
     </IncompleteModalContainer>
   )
