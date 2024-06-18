@@ -28,6 +28,7 @@ export const SuccessModalContainer = styled.div`
     color: black;
     text-align: center;
   }
+
   button {
     background-color: #00bfff;
     border: none;
@@ -46,3 +47,39 @@ export const SuccessModalContainer = styled.div`
 export const ErrorModalContainer = styled(SuccessModalContainer)``
 
 export const IncompleteModalContainer = styled(SuccessModalContainer)``
+
+export const LanguageModalContainer = styled(SuccessModalContainer)`
+  height: 180px;
+  gap: 35px;
+
+  > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  > div:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+
+      img {
+        width: 45px;
+      }
+    }
+  }
+`

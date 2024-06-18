@@ -4,8 +4,8 @@ const languageSlice = createSlice({
     name: 'language',
     initialState: 'pt',
     reducers: {
-        toggleToPT: (state) => (state === 'pt'),
-        toggleToEN: (state) => (state === 'en')
+        toggleToPT: () => 'pt',
+        toggleToEN: () => 'en'
     }
 })
 
