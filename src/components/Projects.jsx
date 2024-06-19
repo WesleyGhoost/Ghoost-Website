@@ -86,7 +86,7 @@ function Projects() {
             img: RE4LP, 
             stars: [GoldStar], 
             link: 'https://resident-evil-4-lp.netlify.app/', 
-            description: language === 'pt' ? 'Uma releitura do site oficial do game Resident Evil 4, produzido pela Capcom. Neste projeto utilizei o SCSS (pré-processador CSS) pela primeira vez. Juntamente com Bootstrap em elementos específicos da página (ex: sliders). E juntamente com JS cheguei ao ponto que eu queria da minha releitura.' : 'A rereading of the Resident Evil 4 game official website, produced by Capcom. In this project I utilized SCSS (a CSS pre-processor) for the first time. Along with Bootstrap in specific elements of the page (ex: sliders). And with the addition of JS I arrived to the point that I wanted of my rereading.', 
+            description: language === 'pt' ? 'Uma releitura do site oficial do game Resident Evil 4, produzido pela Capcom. Neste projeto utilizei o SCSS (pré-processador CSS) pela primeira vez. Juntamente com Bootstrap em elementos específicos da página (ex: sliders). E juntamente com JS cheguei ao ponto que eu queria da minha releitura.' : 'A rereading of the Resident Evil 4 game official website, produced by Capcom. In this project I used SCSS (a CSS pre-processor) for the first time. Along with Bootstrap in specific elements of the page (ex: sliders). And with the addition of JS I arrived to the point that I wanted of my rereading.', 
             date: language === 'pt' ? 'abril de 2024' : 'april 2024', 
             repo: 'https://github.com/WesleyGhoost/RE4-LP', 
             repo_title: 're4-lp'
@@ -300,27 +300,27 @@ function Projects() {
                                 <summary>{project.title}</summary>
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Linguagem:' : 'Language:'}
+                                        {language === 'pt' ? 'Linguagem: ' : 'Language: '}
                                     </strong> 
                                     {project.description}
                                 </p>
                                 {project.diff ?
                                     <p className='project-descrip'>
                                         <strong>
-                                            {language === 'pt' ? 'Diferenciação:' : 'Differentiation'}
+                                            {language === 'pt' ? 'Diferenciação: ' : 'Differentiation: '}
                                         </strong> 
                                         {project.diff}
                                     </p> : ''
                                 }
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Realizado em:' : 'Realized in:'}
+                                        {language === 'pt' ? 'Realizado em: ' : 'Realized in: '}
                                     </strong> 
                                     {project.date}
                                 </p>
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Repositório:' : 'Repository:'}
+                                        {language === 'pt' ? 'Repositório: ' : 'Repository: '}
                                     </strong> 
                                     <a href={project.repo}>{project.repo_title}</a>
                                 </p>
@@ -360,27 +360,27 @@ function Projects() {
                                 <summary>{project.title}</summary>
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Linguagem:' : 'Language:'}
+                                        {language === 'pt' ? 'Linguagem: ' : 'Language: '}
                                     </strong> 
                                     {project.description}
                                 </p>
                                 {project.diff ?
                                     <p className='project-descrip'>
                                         <strong>
-                                            {language === 'pt' ? 'Diferenciação:' : 'Differentiation'}
+                                            {language === 'pt' ? 'Diferenciação: ' : 'Differentiation: '}
                                         </strong> 
                                         {project.diff}
                                     </p> : ''
                                 }
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Realizado em:' : 'Realized in:'}
+                                        {language === 'pt' ? 'Realizado em: ' : 'Realized in: '}
                                     </strong> 
                                     {project.date}
                                 </p>
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Repositório:' : 'Repository:'}
+                                        {language === 'pt' ? 'Repositório: ' : 'Repository: '}
                                     </strong> 
                                     <a href={project.repo}>{project.repo_title}</a>
                                 </p>

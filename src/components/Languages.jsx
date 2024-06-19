@@ -39,7 +39,7 @@ function Languages() {
 
     useEffect(() => {
         revealLanguages()
-    })
+    }, [])
 
     return (
         <>

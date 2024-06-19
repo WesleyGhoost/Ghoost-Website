@@ -24,7 +24,7 @@ function Contact() {
 
     useEffect(() => {
         revealContact()
-    })
+    }, [])
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -34,6 +34,18 @@ function Contact() {
     const [showIncompleteModal, setShowIncompleteModal] = useState('none')
 
     let error = ''
+
+    const handleSuccessModal = () => {
+        setShowSuccessModal('none')
+    }
+
+    const handleErrorModal = () => {
+        setShowErrorModal('none')
+    }
+
+    const handleIncompleteModal = () => {
+        setShowIncompleteModal('none')
+    }
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -71,45 +83,49 @@ function Contact() {
                 className='contact'
                 id="contact"
             >
-                <ContactTitle>Contato</ContactTitle>
+                <ContactTitle>
+                    {language === 'pt' ? 'Contato' : 'Contact'}
+                </ContactTitle>
                 <h3>
-                    {language === 'pt' ? 
-                    'Envie um email diretamente para mim preenchendo as informações abaixo!' :
-                    'Send an email directly to me filling the informations below!'
+                    {language === 'pt' ?
+                        'Envie um email diretamente para mim preenchendo as informações abaixo!' :
+                        'Send an email directly to me filling the informations below!'
                     }
                 </h3>
                 <ContactForm onSubmit={sendEmail}>
                     <input
                         type="text"
-                        placeholder="Nome"
+                        placeholder={language === 'pt' ? 'Nome' : 'Name'}
                         onChange={(e) => setName(e.target.value)}
                     />
                     <input
                         type="email"
-                        placeholder="Email"
+                        placeholder='Email'
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <textarea
-                        placeholder='Mensagem'
+                        placeholder={language === 'pt' ? 'Mensagem' : 'Message'}
                         onChange={(e) => setMessage(e.target.value)}
                     >
                     </textarea>
-                    <button type="submit">Enviar</button>
+                    <button type="submit">
+                        {language === 'pt' ? 'Enviar' : 'Submit'}
+                    </button>
                 </ContactForm>
             </ContactContainer>
 
             <SuccessModal
                 display={showSuccessModal}
-                close={() => setShowSuccessModal('none')}
+                close={handleSuccessModal}
             />
             <ErrorModal
                 display={showErrorModal}
-                close={() => setShowErrorModal('none')}
+                close={handleErrorModal}
                 error={error}
             />
             <IncompleteModal
                 display={showIncompleteModal}
-                close={() => setShowIncompleteModal('none')}
+                close={handleIncompleteModal}
             />
         </>
     )
