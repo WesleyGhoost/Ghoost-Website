@@ -9,4 +9,6 @@ export const ContainerAll = styled.div`
   align-items: center;
   background-color: #000000be;
   border-radius: 8px;
+  opacity: ${props => props.opacity};
+  z-index: 0;
 `;

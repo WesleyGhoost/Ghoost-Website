@@ -51,6 +51,7 @@ export const IncompleteModalContainer = styled(SuccessModalContainer)``
 export const LanguageModalContainer = styled(SuccessModalContainer)`
   height: 180px;
   gap: 35px;
+  left: 30%;
 
   > div:first-of-type {
     display: flex;

@@ -2,7 +2,9 @@ import emailjs from '@emailjs/browser'
 import { ContactContainer, ContactTitle, ContactForm } from "../Styles/contactStyle";
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { ErrorModal, IncompleteModal, SuccessModal } from './modals';
+import { ErrorModal } from '../components/modals/errorModal';
+import { IncompleteModal } from '../components/modals/incompleteModal'
+import { SuccessModal } from '../components/modals/successModal'
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
 

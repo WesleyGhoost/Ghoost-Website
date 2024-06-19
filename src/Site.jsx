@@ -1,4 +1,6 @@
 import { ContainerAll } from "./Styles/ContainerAll";
+import { LanguageModal } from "./components/modals/languageModal";
+import { useSelector } from "react-redux";
 import Navbar from "./components/navbar/navbar";
 import Intro from "./components/Intro";
 import About from './components/About'
@@ -9,24 +11,30 @@ import Contact from "./components/contact";
 import Footer from "./components/Footer";
 
 const Site = () => {
+  const opacity = useSelector((state) => state.appOpacity)
+
   return (
-    <ContainerAll id='intro'>
-      <Navbar />
+    <>
+      <LanguageModal />
 
-      <Intro />
+      <ContainerAll id='intro' opacity={opacity}>
+        <Navbar />
 
-      <About />
+        <Intro />
 
-      <Languages />
+        <About />
 
-      <Projects />
+        <Languages />
 
-      <Details />
+        <Projects />
 
-      <Contact />
+        <Details />
 
-      <Footer />
-    </ContainerAll>
+        <Contact />
+
+        <Footer />
+      </ContainerAll>
+    </>
   );
 }
 
