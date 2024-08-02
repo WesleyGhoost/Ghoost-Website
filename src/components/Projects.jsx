@@ -302,7 +302,7 @@ function Projects() {
                                 <summary>{project.title}</summary>
                                 <p className='project-descrip'>
                                     <strong>
-                                        {language === 'pt' ? 'Linguagem: ' : 'Language: '}
+                                        {language === 'pt' ? 'Descrição: ' : 'Description: '}
                                     </strong> 
                                     {project.description}
                                 </p>
