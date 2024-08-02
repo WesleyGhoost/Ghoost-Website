@@ -83,4 +83,19 @@ export const LanguageModalContainer = styled(SuccessModalContainer)`
       }
     }
   }
+
+  @media screen and (min-width: 520px) and (max-width: 768px) {
+    height: 200px;
+    left: 24%;
+  }
+
+  @media screen and (min-width: 482px) and (max-width: 519px) {
+    height: 220px;
+    left: 24%;
+  }
+
+  @media screen and (min-width: 420px) and (max-width: 481px) {
+    height: 220px;
+    left: 18%;
+  }
 `
