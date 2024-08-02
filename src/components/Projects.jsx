@@ -294,7 +294,9 @@ function Projects() {
                                     src={project.img}
                                     alt={project.title}
                                 />
-                                <h3 style={{ display: showMessages[project.id], position: changePositionMessage }}>Não disponível para este dispositivo</h3>
+                                <h3 style={{ display: showMessages[project.id], position: changePositionMessage }}>
+                                    {language === 'pt' ? 'Não disponível para este dispositivo' : 'Not unavailable for this device'} 
+                                </h3>
                             </a>
                             <details className='project-details'>
                                 <summary>{project.title}</summary>
@@ -354,7 +356,9 @@ function Projects() {
                                     src={project.img}
                                     alt={project.title}
                                 />
-                                <h3 style={{ display: showMessages[project.id], position: changePositionMessage }}>Não disponível para este dispositivo</h3>
+                                <h3 style={{ display: showMessages[project.id], position: changePositionMessage }}>
+                                    {language === 'pt' ? 'Não disponível para este dispositivo' : 'Not unavailable for this device'}
+                                </h3>
                             </a>
                             <details className='project-details'>
                                 <summary>{project.title}</summary>
