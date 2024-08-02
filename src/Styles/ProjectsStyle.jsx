@@ -113,6 +113,11 @@ export const ProjectInfo = styled.div`
     text-align: center;
     top: 40px;
     left: 40px;
+
+    @media screen and (min-width: 420px) and (max-width: 481px) {
+      top: 30px;
+      left: 35px;
+    }
   }
 
   details {
