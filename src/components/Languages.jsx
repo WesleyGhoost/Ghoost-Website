@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { LanguagesTitle, LanguagesContainer, LanguagesExamples } from "../Styles/LanguagesStyle";
 
 import NextIcon from '../img/nextjs.png'
+import PLSQLIcon from '../img/pl-sql.webp'
 
 function Languages() {
     const language = useSelector((state) => state.language)
@@ -86,6 +87,27 @@ function Languages() {
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
                     alt="React"
                 />
+                <img 
+                    className='langs'
+                    height="70"
+                    width="70"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+                    alt="Java" 
+                />
+                <img 
+                    className='langs'
+                    height="65"
+                    width="65"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+                    alt="SQL" 
+                />
+                <img 
+                    className='langs'
+                    height="65"
+                    width="65"
+                    src={PLSQLIcon}
+                    alt="PL/SQL" 
+                />
                 <img
                     className='langs'
                     height="65"
@@ -137,7 +159,19 @@ function Languages() {
                         </p>
 
                         <p>
-                            <strong>ReactJS: </strong>Utilização de JSX, componentes, props e hooks(useState, useEffect, useContext...)
+                            <strong>ReactJS: </strong>Utilização de JSX, componentes, props e hooks(useState, useEffect, useContext...).
+                        </p>
+
+                        <p>
+                            <strong>Java: </strong>Programação POO, classes, interfaces, criação de APIs Restful, tipagem, e acessos. 
+                        </p>
+
+                        <p>
+                            <strong>SQL: </strong>Criação de tabelas, operações DML (Update, Delete...), manipulação de tabelas e registros.
+                        </p>
+
+                        <p>
+                            <strong>PL/SQL: </strong>Procedures, funções, packages, manipulação de tabelas e registros.
                         </p>
 
                         <p>
